@@ -1,109 +1,119 @@
 module.exports = {
     homeScreen: {
-        homeTitleText: 'h1[class"home-text"]',
+        homeTitleText: 'h1[name="promptText"]',
         startButton: 'button[class=home-btn]'
     },
     loanPropTypeScreen: {
         loanTypeText: 'p[name="promptText1"]',
         loanPropText: 'p[name="promptText2"]',
-        loanDropDownmenu: 'select[name=loanDropDown]',
+        loanDropDownMenu: 'select[id="loanTypes"]',
         loanOptions: {
-            optionPurchase: 'option[name=purchase]',
-            optionRefi: 'option[name=refi]',
-            optionEquity: 'option[name=equity]',
+            optionPurchase: 'option[value="Home Purchase"]',
+            optionRefi: 'option[value="Refinance"]',
+            optionEquity: 'option[value="Home Equity"]',
         },
 
-        propDropDownmenu: 'select[name=propDropDown]',
+        propDropDownmenu: 'select[id="propertyTypes"]',
         propOptions: {
-            optionSingle: 'option[name=singleHome]',
-            optionTown: 'option[name=townHome]',
-            optionCondo: 'option[name=condo]',
-            optionMulti: 'option[name=multiHome]',
-            optionMobile: 'option[name=mobileHome]'
+            optionSingle: 'option[value="Single Family Home"]',
+            optionTown: 'option[value="Town Home"]',
+            optionCondo: 'option[value="Condo"]',
+            optionMulti: 'option[value="Multi Family Dwelling"]',
+            optionMobile: 'option[value="Mobile Home"]'
         },
         nextButton: 'button[class="margin-btn"]'
     },
     propLocationScreen: {
         propLocationText: 'p[name="promptText"]',
-        cityName: 'input[name="cityName"]',
+        cityName: 'input[name="city"]',
         nextButton: 'button[class="wTwo-btn"]'
     },
     loanUseScreen: {
         whatLoanText: 'p[name="promptText',
-        primaryHome: 'button[name="primary"]',
-        rentalProperty: 'button[name="rental"]',
-        secondaryHome: 'button[name="secondary"]'
+        primaryHome: 'button[value="Primary Home"]',
+        rentalProperty: 'button[value="Rental Property"]',
+        secondaryHome: 'button[value="Secondary Home"]'
     },
     alreadyFoundHomeScreen: {
         newHomeText: 'p[name="promptText"]',
-        yes: 'button[name="yesFound"]',
-        no: 'buton[name="noFound"]'
+        yes: 'button[name="yesButton"]',
+        no: 'button[name="noButton"]'
     },
     realEstateAgentScreen: {
         agent: 'p[name="promptText"]',
-        yes: 'button[name="yesAgent"]',
-        no: 'button[name="noAgent"]'
+        yes: 'button[name="yesButton"]',
+        no: 'button[name="noButton"]'
     },
     purchPriceDwnPaymntScreen: {
-        estPurchPrice: 'input[name="purchasePrice"]',
-        downPayment: 'input[name="downPayment"]',
+        estPurchPriceText: 'p[name="promptText1"]',
+        downPaymentText: 'p[name="promptText2"]',
+        estPurchPrice: 'input[name="price"]',
+        downPayment: 'input[name="down"]',
         nextButton: 'button[class="wSix-btn"]'
     },
     estCreditScoreScreen: {
-        excellent: 'button[name="excellent"]',
-        good: 'button[name="good"]',
-        fair: 'button[name="fair"]',
-        poor: 'button[name="poor"]'
+        estCreditScoreText: 'p[name="promptText"]',
+        excellent: 'button[value="excellent"]',
+        good: 'button[value="good"]',
+        fair: 'button[value="fair"]',
+        poor: 'button[value="poor"]'
     },
     bankruptcyScreen: {
-        no: 'button[name="noBankruptForclose"]',
-        bankruptcy: 'button[name="bankrupt',
-        forclosure: 'button[name="forclosure"]',
-        both: 'button[name="bankruptForclose"]'
+        bankruptcyOrForeclosureText: 'p[name="promptText"]',
+        no: 'button[value="Has never been in bankruptcy"]',
+        bankruptcy: 'button[value="Has had bankruptcy before"]',
+        forclosure: 'button[value="Has had a foreclosure before"]',
+        both: 'button[value="Has had both a foreclosure and a bankruptcy"]'
     },
     addressScreen: {
-        lineOne: 'input[name="addressOne"]',
-        lineTwo: 'input[name="addressTwo"]',
-        lineThree: 'input[name="addressThree"]',
-        nextButton: 'button[name="next"]'
+        whataddressText: 'p[name="promptText"]',
+        lineOne: 'input[id="addressOne"]',
+        lineTwo: 'input[id="addressTwo"]',
+        lineThree: 'input[id="addressThree"]',
+        nextButton: 'button[name="nextButton"]'
     },
     nameScreen: {
-        firstName: 'input[name="firstName"]',
-        lastName: 'input[name="lastName"]',
-        email: 'input[name="email"]',
-        nextButton: 'button[name="next"]'
+        nameText: 'p[name="promptText"]',
+        firstName: 'input[id="first"]',
+        lastName: 'input[id="last"]',
+        email: 'input[id="email"]',
+        nextButton: 'button[name="nextButton"]'
     },
     overViewScreen: {
-        name: 'div[name="name"]',
-        nameOutput: 'p[name="nameOutput"]',
-        email: 'div[name="email"]',
-        emailOutput: 'p[name="emailOutput"]',
-        loan: 'div[name="loan"]',
-        loanOutput: 'p[name="loanOutput"]',
-        property: 'div[name="property"]',
-        propertyOutput: 'p[name="propertyOutput"]',
-        city: 'div[name="city"]',
-        cityOutput: 'p[name="cityOutput]',
-        propType: 'div[name="propertyType"]',
-        propTypeOutput: 'p[name="propertyOutput"]',
-        found: 'div[name="found"]',
-        foundOutput: 'p[name="foundOutput"]',
-        agent: 'div[name="agent"]',
-        agentOutput: 'p[name="agentOutput"]',
-        cost: 'div[name="cost"]',
-        costOutput: 'p[name="costOutput"]',
-        downPayment: 'div[name="downPayment"]',
-        downPaymentOutput: 'p[name="dwnpaymntOutput"]',
-        credit: 'div[name="credit"]',
-        creditOutput: 'p[name="creditOutput"]',
-        bankruptcy: 'div[name="bankruptcy"]',
-        bankruptcyOutput: 'p[name="bankruptcyOutput"]',
-        address: 'div[name="address"]',
-        addressOutput: 'p[name="addressOutput"]',
-        sendBtn: 'button[name="send"]',
-        startAgainBtn: 'button[name="startOver"]'
+        overviewText: 'div[class="vert-align"]',
+        // name: 'div[name="name"]',
+        nameOutput: 'p[class="name p2"]',
+        // email: 'div[name="email"]',
+        emailOutput: 'p[class="email p2"]',
+        // loan: 'div[name="loan"]',
+        loanOutput: 'p[class="loanType p2"]',
+        // property: 'div[name="property"]',
+        propertyOutput: 'p[class="propertyType p2"]',
+        // city: 'div[name="city"]',
+        cityOutput: 'p[class="city p2"]',
+        // propType: 'div[name="propertyType"]',
+        propTypeOutput: 'p[class="propertyPurpose p2"]',
+        // found: 'div[name="found"]',
+        foundOutput: 'p[class="found p2"]',
+        // agent: 'div[name="agent"]',
+        agentOutput: 'p[class="agent p2"]',
+        // cost: 'div[name="cost"]',
+        costOutput: 'p[class="price p2"]',
+        // downPayment: 'div[name="downPayment"]',
+        downPaymentOutput: 'p[class="downPayment p2"]',
+        // credit: 'div[name="credit"]',
+        creditOutput: 'p[class="creditScore p2"]',
+        // bankruptcy: 'div[name="bankruptcy"]',
+        bankruptcyOutput: 'p[class="creditHistory p2"]',
+        // address: 'div[name="address"]',
+        addressOutput1: 'span[id="addressOne"]',
+        addressOutput2: 'span[id="addressTwo"]',
+        addressOutput3: 'span[id="addressThree"]',
+        sendBtn: 'button[name="sendButton"]',
+        startAgainBtn: 'button[name="restartButton"]'
     },
     thankYouScreen: {
-        homeBtn: 'button[name="homeButton"]'
+        thankYouText: 'p[name="promptText"]',
+        homeBtn: 'button[class="margin-btn"]'
     }
 }

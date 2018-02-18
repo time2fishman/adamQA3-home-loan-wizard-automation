@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="tests"
+    errors="0" failures="1" hostname="" id="" package="tests" skipped="0"
+    tests="1" time="7.953" timestamp="Sun, 18 Feb 2018 21:02:34 GMT">
+  
+    <testcase name="UI test" classname="tests" time="7.953" assertions="16">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Timed out while waiting for element &lt;input[name=&quot;city&quot;]&gt; to be present for 3000 milliseconds.">    at Object.uiTestFunc (/Users/AdamandStacyMartinez/Documents/DevMtn/class-projects/adamQA3-home-loan-wizard-automation/nightwatch/test_data/functions.js:32:14)
+    at Object.UI test (/Users/AdamandStacyMartinez/Documents/DevMtn/class-projects/adamQA3-home-loan-wizard-automation/nightwatch/tests/tests.js:14:19)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

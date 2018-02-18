@@ -21,7 +21,7 @@ module.exports = {
             optionMulti: 'option[value="Multi Family Dwelling"]',
             optionMobile: 'option[value="Mobile Home"]'
         },
-        nextButton: 'button[class="margin-btn"]'
+        nextButton: 'button[name="nextButton"]'
     },
     propLocationScreen: {
         propLocationText: 'p[name="promptText"]',

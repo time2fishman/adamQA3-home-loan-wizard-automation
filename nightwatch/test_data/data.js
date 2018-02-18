@@ -8,17 +8,17 @@ module.exports = {
         loanPropTypeScreen: {
             loanTypeText: 'What type of loan will you be needing?',
             loanPropText: 'What type of property are you purchasing?',
-            loanDropDownMenu: 'Home Purchase',
+            loanDropDownMenu: '',
             loanOptions: {
                 optionPurchase: 'Home Purchase',
                 optionRefi: 'Refinance',
-                optionEquity: 'Home Equity loan/line',
+                optionEquity: 'Home Equity Loan/Line of Credit',
             },
 
-            propDropDownmenu: 'Single Family Home',
+            propDropDownmenu: '',
             propOptions: {
                 optionSingle: 'Single Family Home',
-                optionTown: 'Townhome',
+                optionTown: 'Town Home',
                 optionCondo: 'Condo',
                 optionMulti: 'Multi Family Dwelling',
                 optionMobile: 'Mobile Home'

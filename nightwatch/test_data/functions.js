@@ -18,7 +18,8 @@ module.exports = {
             .expect.element(selectors.loanPropTypeScreen.loanOptions.optionEquity).text.to.equal(data.uiTest.loanPropTypeScreen.loanOptions.optionEquity)
         browser.expect.element(selectors.loanPropTypeScreen.loanOptions.optionPurchase).text.to.equal(data.uiTest.loanPropTypeScreen.loanOptions.optionPurchase)
         browser.expect.element(selectors.loanPropTypeScreen.loanOptions.optionRefi).text.to.equal(data.uiTest.loanPropTypeScreen.loanOptions.optionRefi)
-        browser.expect.element(selectors.loanPropTypeScreen.loanPropText).text.to.equal(data.uiTest.loanPropTypeScreen.loanPropText)
+        browser
+            .click(selectors.loanPropTypeScreen.loanOptions.optionEquity)
         browser.expect.element(selectors.loanPropTypeScreen.propDropDownmenu).text.to.contain(data.uiTest.loanPropTypeScreen.propDropDownmenu)
         browser
             .click(selectors.loanPropTypeScreen.propDropDownmenu)
@@ -27,8 +28,8 @@ module.exports = {
         browser.expect.element(selectors.loanPropTypeScreen.propOptions.optionMobile).text.to.equal(data.uiTest.loanPropTypeScreen.propOptions.optionMobile)
         browser.expect.element(selectors.loanPropTypeScreen.propOptions.optionMulti).text.to.equal(data.uiTest.loanPropTypeScreen.propOptions.optionMulti)
         browser.expect.element(selectors.loanPropTypeScreen.propOptions.optionTown).text.to.equal(data.uiTest.loanPropTypeScreen.propOptions.optionTown)
-        browser.expect.element(selectors.loanPropTypeScreen.nextButton).text.to.equal(data.uiTest.loanPropTypeScreen.nextButton)
         browser
+            .click(selectors.loanPropTypeScreen.propOptions.optionCondo)
             .click(selectors.loanPropTypeScreen.nextButton)
             .waitForElementVisible(selectors.propLocationScreen.cityName, 3000)
             .expect.element(selectors.propLocationScreen.propLocationText).text.to.equal(data.uiTest.propLocationScreen.propLocationText)

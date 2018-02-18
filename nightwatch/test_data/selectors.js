@@ -26,7 +26,7 @@ module.exports = {
     propLocationScreen: {
         propLocationText: 'p[name="promptText"]',
         cityName: 'input[name="city"]',
-        nextButton: 'button[class="wTwo-btn"]'
+        nextButton: 'button[class="nextButton"]'
     },
     loanUseScreen: {
         whatLoanText: 'p[name="promptText',
@@ -49,20 +49,20 @@ module.exports = {
         downPaymentText: 'p[name="promptText2"]',
         estPurchPrice: 'input[name="price"]',
         downPayment: 'input[name="down"]',
-        nextButton: 'button[class="wSix-btn"]'
+        nextButton: 'button[name="nextButton"]'
     },
     estCreditScoreScreen: {
         estCreditScoreText: 'p[name="promptText"]',
-        excellent: 'button[value="excellent"]',
-        good: 'button[value="good"]',
-        fair: 'button[value="fair"]',
-        poor: 'button[value="poor"]'
+        excellent: 'button[value="Excellent"]',
+        good: 'button[value="Good"]',
+        fair: 'button[value="Fair"]',
+        poor: 'button[value="Poor"]'
     },
     bankruptcyScreen: {
         bankruptcyOrForeclosureText: 'p[name="promptText"]',
-        no: 'button[value="Has never been in bankruptcy"]',
-        bankruptcy: 'button[value="Has had bankruptcy before"]',
-        forclosure: 'button[value="Has had a foreclosure before"]',
+        neither: 'button[value="Has not been in bankruptcy or foreclosure"]',
+        bankruptcy: 'button[value="Has had bankruptcy"]',
+        forclosure: 'button[value="Has had a foreclosure"]',
         both: 'button[value="Has had both a foreclosure and a bankruptcy"]'
     },
     addressScreen: {
@@ -81,31 +81,31 @@ module.exports = {
     },
     overViewScreen: {
         overviewText: 'div[class="vert-align"]',
-        // name: 'div[name="name"]',
+        name: 'div[name="nameLabel"]',
         nameOutput: 'p[class="name p2"]',
-        // email: 'div[name="email"]',
+        email: 'div[name="emailLabel"]',
         emailOutput: 'p[class="email p2"]',
-        // loan: 'div[name="loan"]',
+        loan: 'div[name="loanTypeLabel"]',
         loanOutput: 'p[class="loanType p2"]',
-        // property: 'div[name="property"]',
+        property: 'div[name="propertyTypeLabel"]',
         propertyOutput: 'p[class="propertyType p2"]',
-        // city: 'div[name="city"]',
+        city: 'div[name="cityLabel"]',
         cityOutput: 'p[class="city p2"]',
-        // propType: 'div[name="propertyType"]',
+        propType: 'div[name="propertyPurposeLabel"]',
         propTypeOutput: 'p[class="propertyPurpose p2"]',
-        // found: 'div[name="found"]',
+        found: 'div[name="foundLabel"]',
         foundOutput: 'p[class="found p2"]',
-        // agent: 'div[name="agent"]',
+        agent: 'div[name="agentLabel"]',
         agentOutput: 'p[class="agent p2"]',
-        // cost: 'div[name="cost"]',
+        cost: 'div[name="priceLabel"]',
         costOutput: 'p[class="price p2"]',
-        // downPayment: 'div[name="downPayment"]',
+        downPayment: 'div[name="downPaymentLabel"]',
         downPaymentOutput: 'p[class="downPayment p2"]',
-        // credit: 'div[name="credit"]',
+        credit: 'div[name="creditScoreLabel"]',
         creditOutput: 'p[class="creditScore p2"]',
-        // bankruptcy: 'div[name="bankruptcy"]',
+        bankruptcy: 'div[class="vert-align"]',
         bankruptcyOutput: 'p[class="creditHistory p2"]',
-        // address: 'div[name="address"]',
+        address: 'div[name="addressLabel"]',
         addressOutput1: 'span[id="addressOne"]',
         addressOutput2: 'span[id="addressTwo"]',
         addressOutput3: 'span[id="addressThree"]',
